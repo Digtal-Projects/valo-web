@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Boldonse&family=Carter+One&family=Concert+One&family=Francois+One&family=Luckiest+Guy&family=Monoton&family=Passion+One:wght@400;700;900&family=Righteous&family=Russo+One&display=swap');
+
+body {
+    width: 80vw;
+    background-color: #FF4655;
+    margin: auto;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1 {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 30px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #0F1923;
+}
+
+#changingBanner {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+#agentsPNG {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    max-width: 366px;
+    height: 450px;
+    margin-top: auto;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes popSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes zoomFloatIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-10px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+.text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: right; /* Ensures text itself aligns properly */
+}
+.agents {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #111823;
+}
+
+
+#agentName {
+  font-size: 45px;
+  color: #FFFFFF;
+  font-family: "Boldonse";
+  margin: 0;
+  margin-top: 6vh;
+  margin-right: 6vh ;
+  animation: slideInLeft 1.3s ease-out forwards;
+}
+
+#agentRole {
+  font-size: 25px;
+  color: #FF9C00;
+  font-family: "Carter One";
+  margin: 0;
+  
+  margin-right: 6vh ;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.line1 {
+    width: 500px;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    display: inline-block;
+    margin-top: 180px;
+    margin-left: 470px;
+    margin-right: 30px;
+}
+
+.line2 {
+    width: 500px;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    display: inline-block;
+    margin-top: 280px;
+    margin-left: 470px;
+    margin-right: 30px;
+}
+
+.line3 {
+    width: 500px;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    display: inline-block;
+    margin-top: 380px;
+    margin-left: 470px;
+    margin-right: 30px;
+}
+
+.line4 {
+    width: 500px;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    display: inline-block;
+    margin-top: 480px;
+    margin-left: 470px;
+    margin-right: 30px;
+}
+
+
+p {
+    text-align: justify;
+    font-size: clamp(0.8rem, 2vw, 1.0rem);
+    color: #FFFFFF;
+    font-family: "Carter One";
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+    opacity: 0;
+    transform: scale(2.5);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+p1 {
+    font-size: 15px;
+    width: 500px;
+    margin-top: 185px;
+    margin-left: 470px;
+    color: #FFFFFF;
+    position: absolute;
+    display: inline-block;
+    font-family: "Francois One";
+    opacity: 1;
+    transform: scale(0.9);
+    animation: zoomFloatIn 1.2s ease-out forwards;
+}
+
+p2 {
+    font-size: 15px;
+    width: 500px;
+    margin-top: 285px;
+    margin-left: 470px;
+    color: #FFFFFF;
+    position: absolute;
+    display: inline-block;
+    font-family: "Francois One";
+    opacity: 1;
+    transform: scale(0.9);
+    animation: zoomFloatIn 1.2s ease-out forwards;
+}
+
+p3 {
+    font-size: 15px;
+    width: 500px;
+    margin-top: 385px;
+    margin-left: 470px;
+    color: #FFFFFF;
+    position: absolute;
+    display: inline-block;
+    font-family: "Francois One";
+    opacity: 1;
+    transform: scale(0.9);
+    animation: zoomFloatIn 1.2s ease-out forwards;
+}
+
+p4 {
+    font-size: 15px;
+    width: 500px;
+    margin-top: 485px;
+    margin-left: 470px;
+    color: #FFFFFF;
+    position: absolute;
+    display: inline-block;
+    font-family: "Francois One";
+    opacity: 1;
+    transform: scale(0.9);
+    animation: zoomFloatIn 1.2s ease-out forwards;
+}
+
+#ability1 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding: 50px;
+    margin-top: 130px;
+    margin-left: 290px;
+    opacity: 1;
+    transform: scale(0.9);
+    animation: popSlide 0.8s ease forwards;
+}
+
+#ability2 {
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding: 50px;
+    margin-top: 240px;
+    margin-left: 290px;
+    opacity: 1;
+    transform: scale(0.9);
+    animation: popSlide 0.8s ease forwards;
+}
+
+#ability3 {
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding: 50px;
+    margin-top: 340px;
+    margin-left: 290px;
+    opacity: 1;
+    transform: scale(0.9);
+    animation: popSlide 0.8s ease forwards;
+}
+
+#ability4 {
+clip-path: inset(0 0 30% 0);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    padding: 50px;
+    margin-top: 440px;
+    margin-left: 290px;
+    opacity: 1;
+    transform: scale(0.9);
+    animation: popSlide 0.8s ease forwards;
+}
+
+n1,
+n2,
+n3,
+n4 {
+    color: aqua;
+}
+
+.button {
+    background-color: #FF9C00;
+    color: #fff;
+    font-family: "Carter One", sans-serif;
+    font-size: 18px;
+    padding: 14px 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #007bff;;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    background-color: #cc6100;
+    transform: scale(0.95);
+}
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1rem; 
+}
+
+t1,t2,t3,t4,t5,t6,t7 {
+    column-width: 400px;
+    font-family: "Bangers";
+    font-size: 4vh;
+    color: #00FF94;
+    cursor: pointer; color: #00FF94;
+    background-color:#8B0055 ;
+    margin: 5px;
+    padding: 5px;
+}
+
+l1,l2,l3,l4,l5,l6,l7 {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Francois One";
+    font-size: 20px;
+    display: none;
+    text-align: justify;
+    color: #FFFFFF;
+  opacity: 0;
+    transform: scale(0.0);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section,p11 {
+  max-width: 300px;
+  font-size: 20px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #00FF94;
+  padding-bottom: 5px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #00FF94;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: #00FF94;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+#smh {
+  height: 35px;
+  border-radius: 38px;
+}
